@@ -8,7 +8,7 @@ class Common extends Config
 {
     public function define(Container $di)
     {
-        $di->params['Aura\View\View']['helpers'] = $di->lazyGet('html_helper');
+        $di->params['Aura\View\View']['helpers'] = $di->lazyGet('aura/html:helper');
     }
 
     public function modify(Container $di)
